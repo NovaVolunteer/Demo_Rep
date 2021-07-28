@@ -1,0 +1,26 @@
+---
+title: "first_graph_test"
+author: "Brian Wright"
+date: "7/28/2021"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+str(iris)
+iris %>% ggplot(aes(x=Sepal.Length, y=Sepal.Width)
+                )+
+                  geom_point()
+
+
+```
+
