@@ -23,4 +23,12 @@ iris %>% ggplot(aes(x=Sepal.Length, y=Sepal.Width)
 
 
 ```
+```{r}
+str(iris)
+iris %>% ggplot(aes(x=Sepal.Length**2, y=Sepal.Width**2)
+                )+
+                  geom_point()
+
+
+```
 
